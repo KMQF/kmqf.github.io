@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html onclick="sixClick()" >
 <head>
   <title>夜来幽梦忽还乡，小轩窗，正梳妆。</title>
 </head>
 <body>
 	<div id='top' style="position:absolute;left:50%;top:50%;">
 		<p style="font-color:red;font-size:20px;text-align:center;"><a href=".\blogs\2.html">U D no life </a></p>
+		<button id='menu'></button>
 	</div>
 	<div id='middle'></div>
 	<div id='button'></div>
 </body>
 <script>
-	alert("Hi,This is javascript!");
-	element.addEventListener('click',function(){alert("HH");},false);
+	var clickCount=0;
+	function sixClick(){
+			if(clickCount==6){sixClickDisplay();}
+			else {clickCount();}
+		}
+	function clickCount(){
+			count=count+1;
+		}
+	function sixClickDisplay(){
+			document.getElementById("menu").hidden="hidden";
+		}
 </script>
 </html>
