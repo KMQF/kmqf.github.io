@@ -12,13 +12,13 @@
 	<div id='button'></div>
 </body>
 <script>
-	var clickCount=0;
+	var cCount=0;
 	function sixClick(){
-			if(clickCount==6){sixClickDisplay();}
+			if(cCount==6){sixClickDisplay();}
 			else {clickCount();}
 		}
 	function clickCount(){
-			clickCount=clickCount+1;
+			cCount=cCount+1;
 		}
 	function sixClickDisplay(){
 			document.getElementById("menu").hidden="hidden";
