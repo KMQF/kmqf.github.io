@@ -13,14 +13,20 @@
 </body>
 <script>
 	var cCount=0;
+	document.getElementById("menu").hidden="hidden"
 	function sixClick(){
 			if(cCount==6){sixClickDisplay();}
+			if(cCount==7){sevenClickHidden();}
 			else {clickCount();}
 		}
 	function clickCount(){
 			cCount=cCount+1;
 		}
 	function sixClickDisplay(){
+			document.getElementById("menu").hidden="";
+			cCount=cCount+1;
+		}
+	function sevenClickHidden(){
 			document.getElementById("menu").hidden="hidden";
 		}
 </script>
