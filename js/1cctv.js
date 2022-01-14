@@ -1,5 +1,4 @@
 var cCount=0;
-document.getElementById("menu").hidden="hidden"
 function sixClick(){
 		if(cCount==6){
 			sixClickDisplay();
@@ -13,7 +12,7 @@ function sixClick(){
 		}
 	} 
 function clickCount(){ 
-	cCount=cCount+1; 
+	cCount=cCount+1;
 } 
 
 function sixClickDisplay(){ 
