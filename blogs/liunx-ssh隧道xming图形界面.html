@@ -1,0 +1,6 @@
+1、使用 [root@localhost ~]# vncserver 命令，检查系统是否安装了vnc。
+2、未安装vnc时，使用 [root@localhost ~]# yum whatprovides vncserver 查询可使用的vncserver包，安装文件包。
+3、使用[root@localhost ~]# xhost + 查看$DISPLAY显示端口信息。
+4、xhost + 显示为空时，使用 [root@localhost ~]# export DISPLAY [SSH客户端本地IP]:[ssh客户端xming设置端口号].0
+5、[root@localhost ~]# export 生效设置。
+6、[root@localhost ~]# yum install xclock 和 [root@localhost ~]# xclock 测试是否生效。
