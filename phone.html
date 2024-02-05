@@ -49,15 +49,15 @@
                         a -= 0.016;
                         s += 0.002;
                     }
-                }, 15)
+                }, 100)
     });
 	
 	
-	setInterval( function(){for(i=1;i<10;i++){
+	setInterval( function(){for(i=1;i<5;i++){
     // 不通过鼠标，自动 mouseenter 事件。其他事件也类推。
     let  ev = new Event("mouseenter");
     btn.dispatchEvent(ev);
-}},1000);
+}},100);
 			
     </script>
 </body>
