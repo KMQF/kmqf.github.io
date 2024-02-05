@@ -29,10 +29,10 @@
 			document.body.appendChild(heart).innerHTML = a[a_idx];
 			a_idx = (a_idx + 1) % a.length;
 			heart.style.cssText = "position: fixed;left:-100%;";
-			var k=Math.random()*1200
-			var m=Math.random()*1051
+			var k=Math.random()*1021*a_idx
+			var m=Math.random()*1051*a_idx
 			var f=32,
-			x = k , // 横坐标
+			x = k -f / 2, // 横坐标
             y = m - f 
             //x = event.clientX - f / 2, // 横坐标
             //y = event.clientY - f, // 纵坐标
@@ -49,15 +49,15 @@
                         a -= 0.016;
                         s += 0.002;
                     }
-                }, 5)
+                }, 130)
     });
 	
 	
-	setInterval( function(){for(i=1;i<15;i++){
+	setInterval( function(){for(i=1;i<10;i++){
     // 不通过鼠标，自动 mouseenter 事件。其他事件也类推。
     let  ev = new Event("mouseenter");
     btn.dispatchEvent(ev);
-}},2000);
+}},2500);
 			
     </script>
 </body>
